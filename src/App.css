@@ -808,7 +808,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .container-info-github {
-    text-align-last: center;
+    text-align-last: center; 
   }
 
   .container-info-github p {
