@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/bg-avatar.svg";
 
 export const Banner = () => {
@@ -46,9 +45,9 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
-      <Container>
-        <Row className="align-items-center">
-          <Col xs={12} md={6} xl={7}>
+      <Container className="container-header-details">
+        <Row>
+          <Col className="container-details-header">
             <span className="tagline">¡Bienvenido!</span>
             <h1>
               {`¡Hola! Soy Anahi Quintero`} <span className="wrap">{text}</span>{" "}
@@ -58,9 +57,6 @@ export const Banner = () => {
               desarrolladora web. Compartiré contigo contenido de mis proyectos
               los cuales espero que disfrutes.
             </p>
-            <button onClick={() => console.log("connect")}>
-              Let's connect <ArrowRightCircle size={25} />
-            </button>
           </Col>
           <Col xs={12} md={6} xl={5} style={{ zIndex: "10" }}>
             <img src={headerImg} alt="Header Img"></img>
